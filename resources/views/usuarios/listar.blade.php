@@ -1,4 +1,4 @@
-@extends('shared.blade')
+@extends('shared.blase')
 @section('content')
     <div class="panel panel-default">   
         <div class="panel-heading">Lista de Usuários</div>
