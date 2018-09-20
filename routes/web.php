@@ -14,6 +14,7 @@
 Route::get('/', 'AutenticacaoController@home')->name('home');
 Route::get('/registrar', 'UsuarioController@registrar')->name('registrar');
 Route::post('/salvar', 'UsuarioController@salvar')->name('salvar');
+Route::get('/listar', 'UsuarioController@listar')->name('listar');
 Route::get('/login', 'AutenticacaoController@login')->name('login');
 Route::post('/logar', 'AutenticacaoController@logar')->name('logar');
 Route::get('/logout', 'AutenticacaoController@logout')->name('logout');
