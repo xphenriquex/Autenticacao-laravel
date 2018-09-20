@@ -43,8 +43,7 @@
                 <label for="senha" class="col-sm-2 control-label">Senha</label>
                 <div class="col-sm-10">
                     <input type="password" class="form-control" name="senha"
-                    placeholder="Digite sua nova senha ou deixe em branco para 
-                    manter a antiga">
+                    placeholder="Digite sua nova senha ou deixe em branco para manter a antiga">
                 </div>
             </div>
             <div class="form-group">
