@@ -13,7 +13,7 @@ class AdcCampoCargoATbUsuario extends Migration
      */
     public function up()
     {
-        Schema::table('Usuario', function (Blueprint $table) {
+        Schema::table('usuarios', function (Blueprint $table) {
             $table->string('cargo');
         });
     }
@@ -25,7 +25,7 @@ class AdcCampoCargoATbUsuario extends Migration
      */
     public function down()
     {
-        Schema::table('Usuario', function (Blueprint $table) {
+        Schema::table('usuarios', function (Blueprint $table) {
             //
         });
     }
