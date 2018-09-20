@@ -7,6 +7,11 @@ use App\Usuario;
 
 class UsuarioController extends Controller
 {
+    public function listar(){
+        $usuarios = Usuario::all();
+        return view('usuarios.listar', compact('usuarios'));
+    }
+    
     public function registrar(){
         return view('usuarios.registrar');
     }
