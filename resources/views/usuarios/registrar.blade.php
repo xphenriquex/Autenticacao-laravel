@@ -17,6 +17,16 @@
                             <input type="email" class="form-control" name="email" placeholder="Digite seu email">
                         </div>
                     </div>
+                    <div class="form-group">
+                        <label for="cargo" class="col-sm-2 control-label">Cargo</label>
+                        <div class="col-sm-10">
+                            <select  name="cargo" class="form-control">
+                                <option value="" >Selecione</option>
+                                <option value="Atendente" >Atendente</option>
+                                <option value="Gerente" >Gerente</option>
+                            </select>
+                        </div>
+                    </div>
                     <hr>
                     <div class="form-group">
                         <label for="login" class="col-sm-2 control-label">Login</label>
