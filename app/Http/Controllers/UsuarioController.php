@@ -12,6 +12,11 @@ class UsuarioController extends Controller
         return view('usuarios.listar', compact('usuarios'));
     }
     
+    public function editar($id){
+        $usuario = Usuario::find($id);
+        return view('usuarios.editar', compact('usuario'));
+    }
+
     public function registrar(){
         return view('usuarios.registrar');
     }
