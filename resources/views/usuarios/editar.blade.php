@@ -3,7 +3,7 @@
 <div class="panel panel-default">
     <div class="panel-heading"><h3>Atualizar usuário</h3></div>
     <div class="panel-body">
-        <form class="form-horizontal" method="post" action="#">
+        <form class="form-horizontal" method="post" action="{{ Route('atualizar', $usuario->id) }}">
             {{ csrf_field() }}
             <div class="form-group">
                 <label for="nome" class="col-sm-2 control-label">Nome</label>
