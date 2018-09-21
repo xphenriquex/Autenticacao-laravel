@@ -14,11 +14,15 @@ class UsuarioController extends Controller
     }
     
     public function editar($id){
+        $this->authorize('update', Usuario::class);
+
         $usuario = Usuario::find($id);
         return view('usuarios.editar', compact('usuario'));
     }
 
     public function atualizar(Request $request, $id){
+        $this->authorize('update', Usuario::class);
+
         $dados = $request->all();
         $usuario = Usuario::find($id);
 
