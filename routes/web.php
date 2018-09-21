@@ -22,6 +22,7 @@ route::middleware(['auth'])->group(function (){
     Route::get('/dashboard', 'AutenticacaoController@privada')->name('dashboard');
     Route::get('/usuarios', 'UsuarioController@listar')->name('listar');
     Route::get('/usuarios/{id}/editar', 'UsuarioController@editar')->name('editar');
+    Route::post('/usuarios/{id}/atualizar', 'UsuarioController@atualizar')->name('atualizar');
 });
 
 
