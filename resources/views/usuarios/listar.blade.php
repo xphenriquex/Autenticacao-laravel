@@ -11,7 +11,9 @@
                             <th>E-mail</th>
                             <th>Login</th>
                             <th>Cargo</th>
-                            <th>Ações</th>
+                            @can('update', App\Usuario::class)
+                                <th>Ações</th>
+                            @endcan
                         </tr>
                     </thead>           
                     <tbody>           
@@ -21,9 +23,11 @@
                                 <td>{{$usuario->email}}</td>
                                 <td>{{$usuario->login}}</td>
                                 <td>{{$usuario->cargo}}</td>
-                                <td>
-                                    <a href="#"><i class="glyphicon glyphicon-pencil"></i></a>
-                                </td>                               
+                                @can('update', App\Usuario::class)
+                                    <td>
+                                        <a href="{{ route('editar', $usuario->id) }}"><i class="glyphicon glyphicon-pencil"></i></a>
+                                    </td>
+                                @endcan                               
                             </tr>                        
                         @endforeach                                
                     </tbody>
